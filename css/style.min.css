@@ -1,0 +1,157 @@
+/* CSS DIRECTORY
+ *	1. =GLOBAL
+ *	2. =INSTRUCTIONS
+ *	3. =RESULTS-TABLE-SECTION
+ *	4. =RESULTS-TABLE-FILTERS
+ *	5. =RESULTS-TABLE-ACCUMULATORS
+ *  6. =POP-UP
+*/
+
+/* === GLOBAL === */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+thead th {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: white;
+    z-index: 10;
+}
+
+th {
+    padding: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0 auto;
+}
+
+.container {
+    padding-right: 2rem;
+}
+
+/* === INSTRUCTIONS === */
+
+#targetForm {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 400px;
+}
+
+/* === RESULTS-TABLE-SECTION === */
+
+.resultTable {
+    overflow:scroll;
+    height:400px;
+    width: 100%;
+    text-align: center;
+}
+
+#resultTitle {
+    min-width: 100px;
+    padding: 10px 10px;
+    background-color: white;
+    color: black;
+}
+
+/* === RESULTS-TABLE-FILTERS === */
+
+.filterRow {
+    width: 100%;
+    text-align: center;
+}
+
+.filterBlock {
+    width: 24%;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+}
+
+#accumTable {
+    width: 100%;
+}
+
+@media only screen and (max-width: 878px) {
+    .filterBlock {
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #refresh {
+       display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .filterBlock {
+        width: 96.6%;
+    }
+}
+
+/* === RESULTS-TABLE-INTABLE === */
+
+.productTitle {
+    min-width: 100px;
+    padding: 10px 10px;
+    color: white;
+}
+
+#natural {
+    background-color: #E7BF4D;
+}
+
+#fan-Assisted {
+    background-color: #2378B7;
+}
+
+#electric {
+    background-color: #7C8D38;
+}
+
+#heating {
+    background-color: #2C234B;
+}
+
+#productInfoCell {
+    background-color: #F8971D;
+}
+
+/* === RESULTS-TABLE-ACCUMULATORS === */
+
+.accumulation {
+    font-size: 20px;
+    color:white;
+    width: 19.7%;
+}
+
+@media only screen and (max-width: 450px) {
+    .accumulation {
+        width: 100%;
+    }
+}
+
+#outputNotification {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    display: none;
+    text-align: center;
+}
+
+/* === POP-UP === */
+
+.choices__input {
+    text-align: center;
+}
